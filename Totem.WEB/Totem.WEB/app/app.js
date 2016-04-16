@@ -8,6 +8,11 @@ app.config(function ($routeProvider) {
         templateUrl: "/app/views/home.html"
     });
 
+    $routeProvider.when("/account", {
+        controller: "accountController",
+        templateUrl: "/app/views/account.html"
+    });
+
     $routeProvider.otherwise({ redirectTo: "/index" });
 
 });

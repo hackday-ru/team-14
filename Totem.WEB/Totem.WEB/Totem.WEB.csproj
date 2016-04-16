@@ -94,6 +94,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\views\shared\_footer.html" />
+    <Content Include="app\views\shared\_login.html" />
+    <Content Include="app\views\shared\_registration.html" />
     <Content Include="Content\main.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -114,11 +117,10 @@
     <Content Include="app\controllers\accountController.js" />
     <Content Include="app\controllers\indexController.js" />
     <Content Include="app\controllers\loginController.js" />
-    <Content Include="app\controllers\registrationController.js" />
-    <Content Include="app\services\accountSeervice.js" />
+    <Content Include="app\controllers\registerController.js" />
+    <Content Include="app\services\accountService.js" />
     <Content Include="app\services\authInterceptorService.js" />
     <Content Include="app\services\authService.js" />
-    <Content Include="app\services\indexService.js" />
     <Content Include="app\services\tasksService.js" />
     <Content Include="app\views\home.html" />
     <Content Include="Content\bootstrap-theme.css" />

@@ -1,12 +1,13 @@
 ﻿'use strict';
-app.controller('accountService', ['$http', 'ngAuthSettings', function ($scope, ngAuthSettings) {
+app.factory('accountService', ['$http', 'ngAuthSettings', function ($http, ngAuthSettings) {
     var serviceBase = ngAuthSettings.apiServiceBaseUri;
-
+    var serviceFactory = [];
     var _getUserInformation = function () {
         return $http.get(serviceBase + 'api/account/getUserIngormation', { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }).then(function (response) {
             return response;
         });
     };
 
-    $scope.getUserInformation = _getUserInformation;
+    serviceFactory.getUserInformation = _getUserInformation;
+    return serviceFactory;
 }]);

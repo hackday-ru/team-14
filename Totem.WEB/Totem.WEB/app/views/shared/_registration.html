@@ -1,0 +1,25 @@
+﻿<div data-ng-controller="registerController">
+    <h2>Totem</h2>
+    <h3>Регистрация</h3>
+    <div class="row">
+        <form>
+            <div class="col-md-6 col-md-offset-3">
+                <div class="row">
+                    <input type="text" class="input-for-form input-radius-top" ng-model="registerData.name" placeholder="Имя" />
+                </div>
+                <div class="row">
+                    <input type="text" class="input-for-form" ng-model="registerData.email" placeholder="E-mail" />
+                </div>
+                <div class="row">
+                    <input type="password" class="input-for-form" ng-model="registerData.password" placeholder="Пароль" />
+                </div>
+                <div class="row">
+                    <input type="password" class="input-for-form  input-radius-bottom" ng-model="registerData.confirmPassword" placeholder="Пароль еще раз" />
+                </div>
+                <div class="row">
+                    <input type="submit" ng-click="registration()" value="Зарегистрироваться" class="button-for-form" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
