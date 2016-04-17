@@ -94,9 +94,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\controllers\homeController.js" />
+    <Content Include="app\views\account.html" />
     <Content Include="app\views\shared\_footer.html" />
     <Content Include="app\views\shared\_login.html" />
     <Content Include="app\views\shared\_registration.html" />
+    <Content Include="app\views\shared\_task.html" />
+    <Content Include="app\views\shared\_taskAndProof.html" />
     <Content Include="Content\main.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">

@@ -13,6 +13,11 @@ app.config(function ($routeProvider) {
         templateUrl: "/app/views/account.html"
     });
 
+    $routeProvider.when("/home", {
+        controller: "homeController",
+        templateUrl: "/app/views/shared/home.html"
+    });
+
     $routeProvider.otherwise({ redirectTo: "/index" });
 
 });
