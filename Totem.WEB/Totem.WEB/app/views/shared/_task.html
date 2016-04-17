@@ -1,25 +1,26 @@
-﻿<div>
-    <div class="modal-header">
-        <h2>{{task.title}}</h2>
-    </div>
+﻿<div class="row">
     <div class="row">
+        <div class="col-md-3">
+            <div class="picture-margin-task">
+                <img src="https://pp.vk.me/c624425/v624425593/2c91f/xbuoQekTegs.jpg" style="width: 100%; height: 100%;" />
+            </div>
+        </div>
         <div class="col-md-9">
-            <img src="https://pp.vk.me/c624425/v624425593/2c91f/xbuoQekTegs.jpg" style="width: 5%; height: 5%;" />
+            <div class="row">
+                <h4>{{task.title}}</h4>
+            </div>
+            <div class="row">
+                <h3>{{task.description}}</h3>
+            </div>
         </div>
     </div>
-    <div class="row">
+    <div class="task-footer">
         <div class="col-md-3">
-            <h3>{{task.description}}</h3>
+            <h5> {{task.countMoney}}</h5>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-md-3">
-            <h4>{{task.countMoney}}</h4>
-        </div>
-    </div>
-            <div class="modal-footer">
+        <div class="modal-footer">
             <button type="button" class="btn btn-default">Сделать ставку</button>
         </div>
-
     </div>
+</div>
