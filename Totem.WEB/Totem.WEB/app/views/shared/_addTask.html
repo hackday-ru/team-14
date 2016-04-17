@@ -1,0 +1,22 @@
+﻿<div>
+    <h2>Totem</h2>
+    <h3>Сделать ставку</h3>
+    <div class="row">
+        <form>
+            <div class="col-md-6 col-md-offset-3">
+                <div class="row">
+                    <input type="text" class="input-for-form input-radius-top" ng-model="task.name" placeholder="Имя" />
+                </div>
+                <div class="row">
+                    <input type="text" class="input-for-form" ng-model="task.description" placeholder="описание" />
+                </div>
+                <div class="row">
+                    <input type="number" class="input-for-form" ng-model="task.countMoney" placeholder="ставка" />
+                </div>
+                <div class="row">
+                    <input type="submit" ng-click="addTask()" value="Добавить ставку" class="button-for-form" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
