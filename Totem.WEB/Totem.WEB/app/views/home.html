@@ -2,23 +2,15 @@
 
   
 
-    <div class="row text-center">
+    <div class="row text-center" ng-repeat="task in listTasks">
         <h3>Топ ставок</h3>
         <div class="col-md-12">
 
             <hr />
             <div class="modal-body">
-                <h4 class="modal-title">{{listTasks[0].title}}</h4>
-                <h3>{{listTasks[0].description}}</h3>
-                <h5> {{listTasks[0].countMoney}}</h5>
-            </div>
-            <hr />
-
-            <hr />
-            <div class="modal-body">
-                <h4 class="modal-title">{{listTasks[1].title}}</h4>
-                <h3>{{listTasks[1].description}}</h3>
-                <h5> {{listTasks[1].countMoney}}</h5>
+                <h4 class="modal-title">{{task.title}}</h4>
+                <h3>{{task.description}}</h3>
+                <h5> {{task.countMoney}}</h5>
             </div>
             <hr />
 
