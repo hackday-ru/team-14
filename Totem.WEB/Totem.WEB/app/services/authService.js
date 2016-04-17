@@ -59,7 +59,6 @@ app.factory('authService', ['$http', '$q', 'localStorageService', 'ngAuthSetting
             _authentication.isAuth = true;
             _authentication.userName = authData.userName;
         }
-        _authentication.isAuth = true;
     };
 
     authServiceFactory.saveRegistration = _saveRegistration;

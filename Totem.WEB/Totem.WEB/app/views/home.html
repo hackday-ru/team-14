@@ -1,22 +1,35 @@
 ﻿<div ng-controller="homeController" class="row">
 
-    <div class="col-md-12">
-        <h3>Топ ставок</h3>
-        <div class="row text-center" ng-repeat="task in listTasks">
+        <div class="row text-center">
+            <h3>Топ ставок</h3>
+        </div>
+        <div class="row text-center" ng-repeat="tasks in listTasks">
+            <div class="col-md-6  container-border" style="width: 49%" ng-repeat="task in tasks">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="row">
+                            <img src="https://pp.vk.me/c624425/v624425593/2c91f/xbuoQekTegs.jpg" style="width: 100%; height: 100%;"/>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <h4>{{task.title}}</h4>
+                        </div>
+                        <div class="row">
+                            <h3>{{task.description}}</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5> {{task.countMoney}}</h5>
+                    </div>
 
+                    <button data-ng-click="openTaskDialog(task.id)">
+                        Подробнее
+                    </button>
 
-
-            <hr />
-            <div class="modal-body">
-                <h4 class="modal-title">{{task.title}}</h4>
-                <h3>{{task.description}}</h3>
-                <h5> {{task.countMoney}}</h5>
+                </div>
             </div>
-            <hr />
-
-
-
         </div>
-    </div>
-        </div>
-
+</div>

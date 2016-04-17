@@ -1,25 +1,25 @@
-﻿<div data-ng-controller="registerController">
-    <h2>Totem</h2>
-    <h3>Регистрация</h3>
-    <div class="row">
-        <form>
-            <div class="col-md-6 col-md-offset-3">
-                <div class="row">
-                    <input type="text" class="input-for-form input-radius-top" ng-model="registerData.name" placeholder="Имя" />
-                </div>
-                <div class="row">
-                    <input type="text" class="input-for-form" ng-model="registerData.email" placeholder="E-mail" />
-                </div>
-                <div class="row">
-                    <input type="password" class="input-for-form" ng-model="registerData.password" placeholder="Пароль" />
-                </div>
-                <div class="row">
-                    <input type="password" class="input-for-form  input-radius-bottom" ng-model="registerData.confirmPassword" placeholder="Пароль еще раз" />
-                </div>
-                <div class="row">
-                    <input type="submit" ng-click="registration()" value="Зарегистрироваться" class="button-for-form" />
-                </div>
-            </div>
-        </form>
+﻿<div>
+    <div class="modal-header">
+        <h2>{{task.title}}</h2>
     </div>
-</div>
+    <div class="row">
+        <div class="col-md-9">
+            <img src="https://pp.vk.me/c624425/v624425593/2c91f/xbuoQekTegs.jpg" style="width: 5%; height: 5%;" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <h3>{{task.description}}</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <h4>{{task.countMoney}}</h4>
+        </div>
+    </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default">Сделать ставку</button>
+        </div>
+
+    </div>
